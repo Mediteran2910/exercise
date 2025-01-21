@@ -1,0 +1,223 @@
+:root {
+  --font-titles: "Exo 2", serif;
+  --font-paragraphs: "Alegreya Sans", serif;
+  --color-paragraph: #fceaff;
+  --color-lighter-gradient: linear-gradient(
+    295deg,
+    rgba(244, 196, 243, 1) 44%,
+    rgba(255, 163, 207, 1) 92%
+  );
+  --body-background-gradient: linear-gradient(
+    312deg,
+    rgba(10, 1, 63, 1) 16%,
+    rgba(7, 1, 71, 1) 50%,
+    rgba(23, 1, 45, 1) 87%
+  );
+}
+
+* {
+  margin: 0;
+  font-size: 12px;
+}
+
+p {
+  font-family: var(--font-paragraphs);
+  letter-spacing: 1px;
+  font-size: 1.75rem;
+  color: var(--font-paragraphs);
+}
+
+body {
+  background: var(--body-background-gradient);
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  font-family: var(--font-paragraphs);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+main {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-block: 40px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: var(--font-titles);
+  background: var(--color-lighter-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.services-intro-wrapp {
+  margin-bottom: 40px;
+  margin-top: 50px;
+}
+
+article {
+  width: 100%;
+  border: 3px solid transparent; /* Makes sure the border gradient is visible */
+  border-image: linear-gradient(
+      295deg,
+      rgba(244, 196, 243, 1) 44%,
+      rgba(255, 163, 207, 1) 92%
+    )
+    1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  margin-block: 30px;
+}
+
+.article-wrapp-second-row,
+.article-wrapp-first-row {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.article-wrapp-second-row {
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-family: var(--font-titles);
+  background: var(--color-lighter-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 2.5rem;
+  align-self: center;
+}
+
+.service-section-mobile {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+li {
+  font-size: 1.6rem;
+  color: var(--color-paragraph);
+}
+
+ul {
+  margin-top: 20px;
+  padding-left: 0;
+  width: 95%;
+  padding-left: 20px;
+}
+
+h3 {
+  font-weight: 400;
+  font-family: var(--font-titles);
+  color: var(--color-paragraph);
+  font-size: 2rem;
+  align-self: flex-start;
+  margin: 10px;
+  margin-left: 15px;
+  max-width: 90%;
+}
+
+.technologies-wrap {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.one-technologies-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.one-technologies-wrap img {
+  height: 45px;
+  width: auto;
+}
+
+.one-technologies-wrap p {
+  font-size: 1.25rem;
+  margin-top: 10px;
+  color: rgb(253, 169, 246);
+}
+
+@media (min-width: 700px) {
+  .services-intro-wrapp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (min-width: 550px) {
+  .one-technologies-wrap img {
+    height: 55px;
+    width: auto;
+  }
+}
+
+@media (min-width: 1000px) {
+  main {
+    width: 85%;
+  }
+}
+
+@media (min-width: 1350px) {
+  main {
+    width: 75%;
+  }
+}
+@media (min-width: 1550px) {
+  main {
+    width: 65%;
+  }
+}
+@media (min-width: 1650px) {
+  main {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1100px) {
+  .article-wrapp-second-row,
+  .article-wrapp-first-row {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  article {
+    width: 40%;
+  }
+  h3 {
+    margin-left: 25px;
+  }
+}
