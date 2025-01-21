@@ -9,6 +9,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css" />
     <title>Zepralak</title>
   </head>
   <body>
@@ -29,13 +31,17 @@
             <a href="">Contact</a>
           </div>
         </div>
-        <div class="wider-screen-nav" style="display: none">
-          <img src="logo/logo.png" alt="logo of the website, word Zepralak" />
+        <div class="wider-screen-nav">
+          <img
+            src="logo/logo.png"
+            alt="logo of the website, word Zepralak"
+            class="logo"
+          />
           <a href="">Home</a>
           <a href="">Services</a>
-          <a href="">About us</a>
           <a href="">Contact</a>
-          <button>Contact Us</button>
+          <a href="">About us</a>
+          <a href="" id="contact-fake-btn">Contact Us</a>
         </div>
       </nav>
     </header>
@@ -65,38 +71,40 @@
             best solutions are born from collaboration. Our approach is simple:
           </p>
         </div>
-        <div class="why-us-features">
-          <img
-            src="Icone/undraw_collaborators_rgw4 3.png"
-            alt="collaboration illustration"
-          />
-          <h3>We Listen</h3>
-          <p>
-            Every project starts with understanding your vision, goals, and
-            challenges.
-          </p>
-        </div>
-        <div class="why-us-features">
-          <img
-            src="Icone/undraw_online-transactions_8chx 2.png"
-            alt="collaboration illustration"
-          />
-          <h3>We innovate:</h3>
-          <p>
-            Using cutting-edge technologies, we craft solutions that are
-            scalable and future-proof.
-          </p>
-        </div>
-        <div class="why-us-features">
-          <img
-            src="Icone/undraw_personal-website_kz7a 1.png"
-            alt="collaboration illustration"
-          />
-          <h3>We Achieve</h3>
-          <p>
-            We ensure that our work not only meets but exceeds expectations, on
-            time and within budget.
-          </p>
+        <div class="why-us-features-container">
+          <div class="why-us-features">
+            <img
+              src="Icone/undraw_collaborators_rgw4 3.png"
+              alt="collaboration illustration"
+            />
+            <h3>We Listen</h3>
+            <p>
+              Every project starts with understanding your vision, goals, and
+              challenges.
+            </p>
+          </div>
+          <div class="why-us-features">
+            <img
+              src="Icone/undraw_online-transactions_8chx 2.png"
+              alt="collaboration illustration"
+            />
+            <h3>We innovate:</h3>
+            <p>
+              Using cutting-edge technologies, we craft solutions that are
+              scalable and future-proof.
+            </p>
+          </div>
+          <div class="why-us-features">
+            <img
+              src="Icone/undraw_personal-website_kz7a 1.png"
+              alt="collaboration illustration"
+            />
+            <h3>We Achieve</h3>
+            <p>
+              We ensure that our work not only meets but exceeds expectations,
+              on time and within budget.
+            </p>
+          </div>
         </div>
       </section>
       <section class="contact-form-wrapper">
@@ -118,35 +126,37 @@
           <button id="form-button">Send</button>
         </form>
       </section>
-      <hr />
     </main>
     <footer>
-      <div class="footer-wrappers">
-        <h3 class="footer-title">About Us</h3>
-        <p>
-          We are a team of skilled developers with extensive experience,
-          dedicated to building innovative and scalable solutions tailored to
-          your needs.
-        </p>
-      </div>
-      <div class="footer-wrappers">
-        <h4 class="footer-title">Contact</h4>
-        <div class="contact-footer-wraps">
-          <img src="Icone/Email.png" alt="postmail icon" />
-          <a href="mailto:windoftrade2910@gmail.com">blablabla@gmail.com</a>
+      <hr />
+      <div class="footer-container">
+        <div class="footer-wrappers">
+          <h3 class="footer-title">About Us</h3>
+          <p>
+            We are a team of skilled developers with extensive experience,
+            dedicated to building innovative and scalable solutions tailored to
+            your needs.
+          </p>
         </div>
-        <div class="contact-footer-wraps">
-          <img src="Icone/Vector.png" alt="phone icon" />
-          <a href="tel:+385955694957">+386 5903 243</a>
+        <div class="footer-wrappers">
+          <h4 class="footer-title">Contact</h4>
+          <div class="contact-footer-wraps">
+            <img src="Icone/Email.png" alt="postmail icon" />
+            <a href="mailto:windoftrade2910@gmail.com">blablabla@gmail.com</a>
+          </div>
+          <div class="contact-footer-wraps">
+            <img src="Icone/Vector.png" alt="phone icon" />
+            <a href="tel:+385955694957">+386 5903 243</a>
+          </div>
+          <div class="contact-footer-wraps">
+            <img src="Icone/mdi_linkedin.png" alt="linkedin icon" />
+            <a href="https://villajure.com/">blablaImeFirme</a>
+          </div>
         </div>
-        <div class="contact-footer-wraps">
-          <img src="Icone/mdi_linkedin.png" alt="linkedin icon" />
-          <a href="https://villajure.com/">blablaImeFirme</a>
+        <div class="footer-wrappers">
+          <h4 class="footer-title">Address</h4>
+          <p>Zagreb, Croatia</p>
         </div>
-      </div>
-      <div class="footer-wrappers">
-        <h4 class="footer-title">Address</h4>
-        <p>Zagreb, Croatia</p>
       </div>
 
       <p id="copyright">&copy; 2024 Zepralak d.o.o. All rights reserved.</p>
