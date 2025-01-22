@@ -67,7 +67,7 @@ h1 {
 
 article {
   width: 100%;
-  border: 3px solid transparent; /* Makes sure the border gradient is visible */
+  border: 3px solid transparent;
   border-image: linear-gradient(
       295deg,
       rgba(244, 196, 243, 1) 44%,
@@ -145,7 +145,6 @@ h3 {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
-  opacity: 0;
 }
 
 .one-technologies-wrap {
