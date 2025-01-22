@@ -62,6 +62,10 @@ footer {
   margin-bottom: 30px;
 }
 
+.footer-container {
+  margin-bottom: 50px;
+}
+
 @media (min-width: 1000px) {
   .footer-container {
     display: flex;

@@ -76,11 +76,11 @@ form {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-block: 10px;
+  margin-block: 20px;
 }
 
 .contact-form-wrapper p {
-  margin-bottom: 15px;
+  margin-bottom: 35px;
 }
 
 .contact-inputs {
