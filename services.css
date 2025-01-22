@@ -145,6 +145,7 @@ h3 {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
+  opacity: 0;
 }
 
 .one-technologies-wrap {
