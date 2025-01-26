@@ -37,13 +37,16 @@ contactForm.addEventListener("submit", async (evt) => {
   };
 
   try {
-    const response = await fetch("http://localhost:3000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(infoObj),
-    });
+    const response = await fetch(
+      "https://mediteran2910.github.io/exercise/contact.html",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(infoObj),
+      }
+    );
     const responseData = await response.json();
     respondMessage(response, responseData);
   } catch (error) {
