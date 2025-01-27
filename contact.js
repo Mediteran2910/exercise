@@ -27,26 +27,24 @@ contactForm.addEventListener("submit", async (evt) => {
 
   let infoObj = {
     senderName: nameInput.value,
+    senderEmail: emailInput.value,
     subject: "Zepralak question",
     text: `Hi, you have new message from: ${nameInput.value},
     you can contact me on ${emailInput.value} ,
     message:${message.value}`,
     html: `<p><b>You have new message from:</b> ${nameInput.value}</p>, 
     <p> <b>You can contact me on:</b> ${emailInput.value} </p> ,
-    <p><b>Message:${message.value} </b></p>`,
+    <p><b>Message: ${message.value} </b></p>`,
   };
 
   try {
-    const response = await fetch(
-      "https://mediteran2910.github.io/exercise/contact.html",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(infoObj),
-      }
-    );
+    const response = await fetch("http://localhost:3000/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(infoObj),
+    });
     const responseData = await response.json();
     respondMessage(response, responseData);
   } catch (error) {
