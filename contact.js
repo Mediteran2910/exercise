@@ -26,15 +26,9 @@ contactForm.addEventListener("submit", async (evt) => {
   evt.preventDefault();
 
   let infoObj = {
-    senderName: nameInput.value,
-    senderEmail: emailInput.value,
-    subject: "Zepralak question",
-    text: `Hi, you have new message from: ${nameInput.value},
-    you can contact me on ${emailInput.value} ,
-    message:${message.value}`,
-    html: `<p><b>You have new message from:</b> ${nameInput.value}</p>, 
-    <p> <b>You can contact me on:</b> ${emailInput.value} </p> ,
-    <p><b>Message: ${message.value} </b></p>`,
+    name: nameInput.value,
+    email: emailInput.value,
+    message: message.value,
   };
 
   try {
@@ -43,7 +37,7 @@ contactForm.addEventListener("submit", async (evt) => {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(infoObj),
+      body: JSON.stringify({ infoObj }),
     });
     const responseData = await response.json();
     respondMessage(response, responseData);
