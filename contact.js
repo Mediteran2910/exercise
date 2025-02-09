@@ -33,7 +33,7 @@ contactForm.addEventListener("submit", async (evt) => {
 
   try {
     const response = await fetch(
-      "https://email-service-yarn.onrender.com/wake-me-up/contact",
+      "https://email-service-yarn.onrender.com/contact",
       {
         method: "POST",
         headers: {
