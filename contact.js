@@ -32,13 +32,16 @@ contactForm.addEventListener("submit", async (evt) => {
   };
 
   try {
-    const response = await fetch("http://localhost:3000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ infoObj }),
-    });
+    const response = await fetch(
+      "https://email-service-yarn.onrender.com/wake-me-up/contact",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ infoObj }),
+      }
+    );
     const responseData = await response.json();
     respondMessage(response, responseData);
   } catch (error) {
@@ -48,4 +51,11 @@ contactForm.addEventListener("submit", async (evt) => {
       message: "An error occurred while sending the message",
     });
   }
+});
+
+emailInput.addEventListener("focus", () => {
+  console.log("Input is focused");
+  fetch("https://email-service-yarn.onrender.com/wake-me-up").catch((err) =>
+    console.error("Waking server failed", err)
+  );
 });
