@@ -53,7 +53,7 @@ contactForm.addEventListener("submit", async (evt) => {
   }
 });
 
-emailInput.addEventListener("focus", () => {
+nameInput.addEventListener("focus", () => {
   console.log("Input is focused");
   fetch("https://email-service-yarn.onrender.com/wake-me-up").catch((err) =>
     console.error("Waking server failed", err)
